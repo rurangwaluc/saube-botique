@@ -1117,7 +1117,13 @@ section {
   border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
   text-align: center;
   color: #666;
-  font-size: 2rem;
+  font-size: 1.4rem;
+}
+.footer .credit a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1305a5;
+  text-decoration: underline;
 }
 
 @media (max-width: 991px) {

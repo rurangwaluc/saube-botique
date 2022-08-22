@@ -1330,9 +1330,14 @@ section{
         border-top: $border;
         text-align: center;
         color:$light-color;
-        font-size: 2rem;
+        font-size: 1.4rem;
 
-      
+      a{
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #1305a5; 
+        text-decoration: underline;
+      }
     }
 
 }
