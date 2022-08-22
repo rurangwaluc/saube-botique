@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saube Fashion Boutique</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- fontawesome cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <img src="image/saube_logo.jpg" alt="Logo" width="70"></a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#products">products</a>
+        <a href="#featured">featured</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <div id="search-btn" class="fas fa-phone-alt"></div>
+        <a href="tel:250785655554" class="phone">+250785655554</a>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+    <div class="main-grid">
+        <div class="sub-grid-1">
+          <div class="logo">
+            <a href="">
+              <span>saube</span>
+              <span>boutique</span>
+            </a>
+          </div>
+  
+          <div class="number-rotate">
+            <div class="number-inner">
+              <div class="line"></div>
+              <span>01/06</span>
+            </div>
+          </div>
+  
+          <div class="arrows">
+            <div class="arrow" onclick="change_pic_fw()">
+              <i class="fas fa-arrow-up"></i>
+            </div>
+            <div class="arrow" onclick="change_pic_bk()">
+              <i class="fas fa-arrow-down"></i>
+            </div>
+  
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+            <div class="background-text">
+              <span>GO</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="sub-grid-2">
+          <div class="background-text-rotate">
+            <span>SAUBE</span>
+          </div>
+        </div>
+  
+        <div class="sub-grid-3">
+          <div class="background-color"></div>
+        </div>
+        <div class="sub-grid-4"></div>
+  
+        <div class="sub-grid-5">
+         
+  
+          <div class="category-rotate">
+            <div class="category-inner">
+              <span>Casual</span>
+              <div class="line"></div>
+            </div>
+          </div>
+  
+          <!-- <div class="socials">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-pinterest-p"></i></a>
+          </div> -->
+  
+          <div class="dot3"></div>
+          <div class="dot4"></div>
+          <div class="background-text-2-rotate"><span>BOUTIQUE</span></div>
+        </div>
+  
+        <div class="sub-grid-234">
+          <span>FASHION</span>
+          <div class="circle">
+            <div class="circle-border"></div>
+            <img src="./pics/fashion1.png" />
+          </div>
+        </div>
+      </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner-container">
+
+    <div class="banner">
+        <img src="image/shop_banner_img1.jpg" alt="">
+        <div class="content">
+            <span>special offer</span>
+            <h3>upto 50% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+    
+    <div class="banner">
+        <img src="image/shop_banner_img2.jpg" alt="">
+        <div class="content">
+            <span>special offer</span>
+            <h3>upto 50% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> exclusive <span>products</span> </h1>
+
+    <div class="filter-buttons">
+        <div class="buttons active" data-filter="all">all</div>
+        <div class="buttons" data-filter="arrivals">new arrivals</div>
+        <div class="buttons" data-filter="featured">featured</div>
+        <div class="buttons" data-filter="special">special offer</div>
+        <div class="buttons" data-filter="seller">best seller</div>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box" data-item="featured">
+          
+            <div class="image">
+                <img src="image/product_img1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>product name</h3>
+                <div class="price">
+                    <div class="amount">$20.00</div>
+                    
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="box" data-item="special">
+         
+            <div class="image">
+                <img src="image/product_img2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>product name</h3>
+                <div class="price">
+                    <div class="amount">$20.00</div>
+                    
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="box" data-item="seller">
+         
+            <div class="image">
+                <img src="image/product_img3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>product name</h3>
+                <div class="price">
+                    <div class="amount">$20.00</div>
+                    
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="box" data-item="arrivals">
+         
+            <div class="image">
+                <img src="image/product_img4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>product name</h3>
+                <div class="price">
+                    <div class="amount">$20.00</div>
+                    
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="box" data-item="featured">
+         
+            <div class="image">
+                <img src="image/product_img5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>product name</h3>
+                <div class="price">
+                    <div class="amount">$20.00</div>
+                    
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="box" data-item="arrivals">
+         
+            <div class="image">
+                <img src="image/product_img6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>product name</h3>
+                <div class="price">
+                    <div class="amount">$20.00</div>
+                    
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="box" data-item="special">
+         
+            <div class="image">
+                <img src="image/product_img7.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>product name</h3>
+                <div class="price">
+                    <div class="amount">$20.00</div>
+                    
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="box" data-item="seller">
+         
+            <div class="image">
+                <img src="image/product_img8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>product name</h3>
+                <div class="price">
+                    <div class="amount">$20.00</div>
+                    
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="box" data-item="seller">
+         
+            <div class="image">
+                <img src="image/product_img9.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>product name</h3>
+                <div class="price">
+                    <div class="amount">$20.00</div>
+                    
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="box" data-item="featured">
+         
+            <div class="image">
+                <img src="image/product_img10.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>product name</h3>
+                <div class="price">
+                    <div class="amount">$20.00</div>
+                    
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="box" data-item="special">
+         
+            <div class="image">
+                <img src="image/product_img11.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>product name</h3>
+                <div class="price">
+                    <div class="amount">$20.00</div>
+                    
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="box" data-item="seller">
+         
+            <div class="image">
+                <img src="image/product_img12.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>product name</h3>
+                <div class="price">
+                    <div class="amount">$20.00</div>
+                    
+                </div>
+               
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- products section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal">
+
+    <div class="image">
+        <img src="image/tranding_img.png" alt="">
+    </div>
+
+    <div class="content">
+        <span>new season trending!</span>
+        <h3>best summer collection</h3>
+        <p>sale get up to 50% off</p>
+        <a href="#" class="btn">shop now</a>
+    </div>
+
+</section>
+
+<!-- deal section ends -->
+
+<!-- featured section starts  -->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>featured</span> products </h1>
+
+    <div class="swiper featured-slider">
+        
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               
+                <div class="image">
+                    <img src="image/product_img1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>product name</h3>
+                    <div class="price">
+                        <div class="amount">$20.00</div>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               
+                <div class="image">
+                    <img src="image/product_img2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>product name</h3>
+                    <div class="price">
+                        <div class="amount">$20.00</div>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               
+                <div class="image">
+                    <img src="image/product_img3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>product name</h3>
+                    <div class="price">
+                        <div class="amount">$20.00</div>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               
+                <div class="image">
+                    <img src="image/product_img4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>product name</h3>
+                    <div class="price">
+                        <div class="amount">$20.00</div>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               
+                <div class="image">
+                    <img src="image/product_img5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>product name</h3>
+                    <div class="price">
+                        <div class="amount">$20.00</div>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               
+                <div class="image">
+                    <img src="image/product_img6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>product name</h3>
+                    <div class="price">
+                        <div class="amount">$20.00</div>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- featured section ends -->
+
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <div class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>address</h3>
+            <p>Kacyiru, Kigali, Rwanda</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>email</h3>
+            <p>saubeboutique@gmail.com</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>phone</h3>
+            <p>+250785655554</p>
+        </div>
+
+    </div>
+
+
+
+</section>
+
+<!-- contact section ends -->
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+
+    <div class="credit">CopyRight &copy;  <script>document.write(new Date().getFullYear())</script> <span>Developed By Luc</span> </div>
+    
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+<a href="https://wa.me/250785655554" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
